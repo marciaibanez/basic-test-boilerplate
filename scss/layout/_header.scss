@@ -1,0 +1,106 @@
+.l-header {
+  background-color: #75bc97;
+  position: relative;
+  padding-top: 185%;
+
+  &__mobile-leaves,
+  &__mobile-plantperson,
+  &__left-leaves,
+  &__right-leaves,
+  &__plant-person,
+  &__content {
+    position: absolute;
+  }
+
+  &__mobile-leaves,
+  &__left-leaves,
+  &__plant-person,
+  &__right-leaves,
+  &__content {
+    z-index: 1;
+  }
+
+  &__left-leaves,
+  &__right-leaves,
+  &__plant-person {
+    display: none;
+  }
+
+  &__mobile-leaves,
+  &__left-leaves {
+    top: 0;
+    left: 0;
+  }
+
+  &__right-leaves,
+  &__content {
+    top: 0;
+  }
+
+  &__mobile-leaves {
+    width: 100%;
+  }
+
+  &__mobile-plantperson {
+    width: 86%;
+    top: 56%;
+    left: 6.87%;
+    z-index: 0;
+  }
+
+  &__plant-person {
+    height: 85%;
+    top: 7.2%;
+    left: 55%;
+  }
+
+  &__right-leaves {
+    right: 0;
+  }
+
+  &__content {
+    padding: 2rem;
+    color: white;
+  }
+
+  &__logo {
+    max-width: clamp(134px, 50%, 210px);
+  }
+
+  &__title {
+    font-size: 14vw;
+  }
+
+  &__arrow {
+    height: clamp(20px, 50%, 38px);
+  }
+
+  @media (min-width: 769px) {
+    padding-top: 34%;
+
+    &__mobile-leaves,
+    &__mobile-plantperson {
+      display: none;
+    }
+
+    &__left-leaves,
+    &__right-leaves,
+    &__plant-person {
+      display: block;
+    }
+
+    &__arrow {
+      height: 4vw;
+    }
+
+    &__title {
+      font-size: 4vw;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    &__content {
+      padding: 4rem 0;
+    }
+  }
+}
