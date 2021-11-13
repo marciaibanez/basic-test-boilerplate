@@ -18,11 +18,31 @@
   <body>
     <header class="l-header">
       <div class="l-header__background">
-        <img class="l-header__mobile-leaves" src="images/hero/mobile/mobile-leaves.png" alt="">
-        <img class="l-header__mobile-plantperson" src="images/hero/mobile/mobile-plantperson.png" alt="">
-        <img class="l-header__left-leaves" src="images/hero/desktop/left-leaves.png" alt="">
-        <img class="l-header__plant-person" src="images/hero/desktop/plant-person.png" alt="">
-        <img class="l-header__right-leaves" src="images/hero/desktop/right-leaves.png" alt="">
+        <img
+          class="l-header__mobile-leaves"
+          src="images/hero/mobile/mobile-leaves.png"
+          alt=""
+        />
+        <img
+          class="l-header__mobile-plantperson"
+          src="images/hero/mobile/mobile-plantperson.png"
+          alt=""
+        />
+        <img
+          class="l-header__left-leaves"
+          src="images/hero/desktop/left-leaves.png"
+          alt=""
+        />
+        <img
+          class="l-header__plant-person"
+          src="images/hero/desktop/plant-person.png"
+          alt=""
+        />
+        <img
+          class="l-header__right-leaves"
+          src="images/hero/desktop/right-leaves.png"
+          alt=""
+        />
       </div>
       <div class="l-container">
         <div class="l-header__content">
@@ -41,55 +61,68 @@
       </div>
     </header>
 
-    <main>
-      <ul>
-        <li>
-          <img src="" alt="" loading="lazy" />
-          <p></p>
-          <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </li>
-        <li>
-          <img src="" alt="" loading="lazy" />
-          <p></p>
-          <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </li>
-        <li>
-          <img src="" alt="" loading="lazy" />
-          <p></p>
-          <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </li>
-      </ul>
+    <main class="l-main p-home">
+      <section class="l-section section-filters">
+        <div class="l-container">
+          <div class="section-filters__item">
+            <img
+              class="section-filters__image"
+              src="images/illustrations/sun.png"
+              alt=""
+            />
+            <p class="section-filters__description">
+              <b>1.</b> Set the amount of <b>sunlight</b> <br />
+              your plant will get.
+            </p>
+            <select class="section-filters__select" name="" id="">
+              <option disabled selected value="">Select...</option>
+              <option value="no">No sun</option>
+              <option value="low">A bit of sunlight</option>
+              <option value="high">A lot of sunlight</option>
+            </select>
+          </div>
+          <div class="section-filters__item">
+            <img
+              class="section-filters__image"
+              src="images/illustrations/wateringcan.png"
+              alt=""
+            />
+            <p class="section-filters__description">
+              <b>2.</b> How often do you want to <br />
+              <b>water</b> your plant?
+            </p>
+            <select class="section-filters__select" name="" id="">
+              <option disabled selected value="">Select...</option>
+              <option value="regularly">Regularly</option>
+              <option value="daily">Daily</option>
+              <option value="rarely">Rarely</option>
+            </select>
+          </div>
+          <div class="section-filters__item">
+            <img
+              class="section-filters__image"
+              src="images/illustrations/dog.png"
+              alt=""
+            />
+            <p class="section-filters__description">
+              <b>3.</b> Do you have pets? Do <br />
+              they <b>chew</b> plants?
+            </p>
+            <select class="section-filters__select" name="" id="">
+              <option disabled selected value="">Select...</option>
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <section>
-      <img src="" alt="" loading="lazy" />
-      <h1></h1>
-      <ul>
-        <li>
-          <div>
-            <img src="" alt="" loading="lazy" />
-            <h2></h2>
-            <h3></h3>
-            <div>icons</div>
-          </div>
-        </li>
-      </ul>
-    </section>
     <button>
       <img src="" alt="" loading="lazy" />
       <a href="">Back to top</a>
     </button>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

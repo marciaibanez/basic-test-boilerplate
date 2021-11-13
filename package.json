@@ -9,6 +9,7 @@
     "deploy": "yarn build && surge"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "normalize.css": "^8.0.1",
     "parcel": "1.12.4",
     "surge": "^0.23.0"

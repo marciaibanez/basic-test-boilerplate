@@ -1,0 +1,46 @@
+.p-home {
+  .section-filters {
+    background: white;
+
+    .l-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (min-width: 769px) {
+        flex-direction: row;
+        grid-gap: 2rem;
+      }
+    }
+
+    &__description,
+    &__select {
+      color: #848484;
+    }
+
+    &__item {
+      margin-bottom: 3rem;
+
+      &:nth-child(2) .p-home__image {
+        transform: scaleX(-1);
+      }
+    }
+
+    &__image {
+      max-height: 75px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__select {
+      width: 100%;
+      border-radius: 30px;
+      border: 1px solid #848484;
+      padding: 10px;
+      background-color: white;
+    }
+  }
+}
