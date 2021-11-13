@@ -74,12 +74,14 @@
               <b>1.</b> Set the amount of <b>sunlight</b> <br />
               your plant will get.
             </p>
-            <select class="section-filters__select" name="" id="">
-              <option disabled selected value="">Select...</option>
-              <option value="no">No sun</option>
-              <option value="low">A bit of sunlight</option>
-              <option value="high">A lot of sunlight</option>
-            </select>
+            <div class="c-select">
+              <select class="section-filters__select" name="" id="">
+                <option disabled selected value="">Select...</option>
+                <option value="no">No sun</option>
+                <option value="low">A bit of sunlight</option>
+                <option value="high">A lot of sunlight</option>
+              </select>
+            </div>
           </div>
           <div class="section-filters__item">
             <img
@@ -91,12 +93,14 @@
               <b>2.</b> How often do you want to <br />
               <b>water</b> your plant?
             </p>
-            <select class="section-filters__select" name="" id="">
-              <option disabled selected value="">Select...</option>
-              <option value="regularly">Regularly</option>
-              <option value="daily">Daily</option>
-              <option value="rarely">Rarely</option>
-            </select>
+            <div class="c-select">
+              <select class="section-filters__select" name="" id="">
+                <option disabled selected value="">Select...</option>
+                <option value="regularly">Regularly</option>
+                <option value="daily">Daily</option>
+                <option value="rarely">Rarely</option>
+              </select>
+            </div>
           </div>
           <div class="section-filters__item">
             <img
@@ -108,20 +112,44 @@
               <b>3.</b> Do you have pets? Do <br />
               they <b>chew</b> plants?
             </p>
-            <select class="section-filters__select" name="" id="">
-              <option disabled selected value="">Select...</option>
-              <option value="true">Yes</option>
-              <option value="false">No</option>
-            </select>
+            <div class="c-select">
+              <select class="section-filters__select" name="" id="">
+                <option disabled selected value="">Select...</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </select>
+            </div>
           </div>
         </div>
       </section>
-    </main>
 
-    <button>
-      <img src="" alt="" loading="lazy" />
-      <a href="">Back to top</a>
-    </button>
+      <section class="l-section section-results">
+        <div class="l-container">
+          <div class="section-results__info">
+            <h2 class="section-results__title">No results yet...</h2>
+            <p class="section-results__description">
+              Use the filters above top find <br />
+              the plant that best fits your <br />
+              enviroment :)
+            </p>
+          </div>
+          <div class="section-results__image">
+            <img src="images/illustrations/no-results.png" alt="" />
+          </div>
+        </div>
+        <div class="l-container">
+          <button class="c-button">
+            <img
+              class="c-button__arrow"
+              src="images/icons/arrow-up.svg"
+              alt=""
+              loading="lazy"
+            />
+            <a class="c-button__anchor" href="">Back to the top</a>
+          </button>
+        </div>
+      </section>
+    </main>
 
     <script src="./js/index.js"></script>
   </body>

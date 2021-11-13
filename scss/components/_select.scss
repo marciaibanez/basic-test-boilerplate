@@ -1,0 +1,17 @@
+.c-select {
+	position: relative;
+
+	&::after {
+		content: "";
+		width: 12px;
+		height: 12px;
+		background-color: transparent;
+		border-right: 1px solid #848484;
+		border-bottom: 1px solid #848484;
+		display: inline-block;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 30%;
+		right: 15px;
+	}
+}
