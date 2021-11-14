@@ -13,15 +13,14 @@
       }
     }
 
-    &__description,
-    &__select {
+    &__description {
       color: #848484;
     }
 
     &__item {
       margin-bottom: 3rem;
 
-      &:nth-child(2) .p-home__image {
+      &:nth-child(2) .section-filters__image {
         transform: scaleX(-1);
       }
     }
@@ -33,16 +32,6 @@
     &__description {
       font-size: 14px;
       line-height: 24px;
-    }
-
-    &__select {
-      width: 100%;
-      border-radius: 30px;
-      border: 1px solid #848484;
-      padding: 14px;
-      background-color: white;
-      appearance: none;
-      cursor: pointer;
     }
   }
 

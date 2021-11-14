@@ -1,17 +1,28 @@
 .c-select {
-	position: relative;
+  position: relative;
 
-	&::after {
-		content: "";
-		width: 12px;
-		height: 12px;
-		background-color: transparent;
-		border-right: 1px solid #848484;
-		border-bottom: 1px solid #848484;
-		display: inline-block;
-		transform: rotate(45deg);
-		position: absolute;
-		top: 30%;
-		right: 15px;
-	}
+  &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-right: 1px solid #848484;
+    border-bottom: 1px solid #848484;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 30%;
+    right: 15px;
+  }
+
+  &__select {
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #848484;
+    padding: 14px;
+    background-color: white;
+    appearance: none;
+    cursor: pointer;
+	color: #848484;
+  }
 }
