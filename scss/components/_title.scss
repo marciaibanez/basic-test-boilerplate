@@ -1,0 +1,17 @@
+.c-title {
+  &--grey {
+    color: #a9a9a9;
+    font-size: 45px;
+  }
+
+  &--black {
+    color: black;
+    font-size: 40px;
+  }
+
+  @media (min-width: 769px) {
+    &--black {
+      font-size: 55px;
+    }
+  }
+}

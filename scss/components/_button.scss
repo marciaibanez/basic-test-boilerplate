@@ -1,21 +1,24 @@
-.c-button {
-  margin: 2rem 0;
-  padding: 10px;
-  border: 1px solid #15573f;
-  border-radius: 30px;
-  width: 100%;
-	cursor: pointer;
+.button-container {
+  background-color: #f6f6f6;
 
-  &__anchor {
-    text-decoration: none;
-    color: #15573f;
-    vertical-align: super;
-    text-transform: lowercase;
-    margin-left: 15px;
-	}
+  .c-button {
+    padding: 10px;
+    border: 1px solid #15573f;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
 
-	&:hover {
-		background: #B3E8CD;
-		border-color: #B3E8CD;
-	}
+    &__anchor {
+      text-decoration: none;
+      color: #15573f;
+      vertical-align: super;
+      text-transform: lowercase;
+      margin-left: 15px;
+    }
+
+    &:hover {
+      background: #B3E8CD;
+      border-color: #B3E8CD;
+    }
+  }
 }

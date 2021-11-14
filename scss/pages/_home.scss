@@ -35,7 +35,7 @@
     }
   }
 
-  .section-results {
+  .section-no-results {
     background-color: #f6f6f6;
 
     .l-container {
@@ -46,13 +46,9 @@
         flex-direction: row;
       }
     }
-    &__title,
+
     &__description {
       color: #a9a9a9;
-    }
-
-    &__title {
-      font-size: 45px;
     }
 
     &__description {
@@ -63,6 +59,20 @@
     &__image {
       margin: 0 auto;
       padding: 2rem 0;
+    }
+  }
+
+  .section-results {
+    background-color: #f6f6f6;
+
+    &__image {
+      height: 75px;
+    }
+
+    .cards-container {
+      display: flex;
+      grid-gap: 1.5rem;
+      overflow-x: scroll;
     }
   }
 }
