@@ -40,11 +40,13 @@
       .c-card__title {
         font-size: 35px;
         max-width: 60%;
+        margin: 0;
       }
 
       .c-card__content {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         margin-top: auto;
       }
 
