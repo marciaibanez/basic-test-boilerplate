@@ -74,5 +74,14 @@
       grid-gap: 1.5rem;
       overflow-x: scroll;
     }
+
+    @media (min-width: 769px) {
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        overflow-x: hidden;
+      }
+    }
   }
 }
