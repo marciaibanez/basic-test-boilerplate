@@ -98,6 +98,12 @@
     }
   }
 
+  @media (min-width: 1000px) {
+    &__content {
+      padding: 2rem 0;
+    }
+  }
+
   @media (min-width: 1500px) {
     &__content {
       padding: 4rem 0;
