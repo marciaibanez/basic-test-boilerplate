@@ -21,6 +21,11 @@
     max-width: 50%;
   }
 
+  &__image,
+  &__content {
+    margin-top: auto;
+  }
+
   &__content {
     padding: 0 20px;
   }
@@ -28,6 +33,17 @@
   &__details {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+
+    img {
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
   }
 
   @media (min-width: 769px) {
@@ -47,7 +63,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-top: auto;
       }
 
       .c-card__details {

@@ -2,7 +2,6 @@
   "name": "front-end-test-2",
   "version": "1.0.0",
   "description": "Simple Parcel Sandbox",
-  "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
@@ -10,13 +9,15 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "images": "^3.2.3",
     "normalize.css": "^8.0.1",
-    "parcel": "1.12.4",
+    "parcel": "2.0.1",
     "surge": "^0.23.0"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
     "parcel-bundler": "^1.6.1",
-    "sass": "^1.43.3"
+    "sass": "^1.43.4"
   },
   "keywords": []
 }
