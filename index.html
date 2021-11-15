@@ -63,67 +63,70 @@
 
     <main class="l-main p-home">
       <section class="l-section section-filters">
-        <div class="l-container">
-          <div class="section-filters__item">
-            <img
-              class="section-filters__image"
-              src="images/illustrations/sun.png"
-              alt=""
-            />
-            <p class="section-filters__description">
-              <b>1.</b> Set the amount of <b>sunlight</b> <br />
-              your plant will get.
-            </p>
-            <div class="c-select">
-              <select class="c-select__select" name="" id="">
-                <option disabled selected value="">Select...</option>
-                <option value="no">No sun</option>
-                <option value="low">A bit of sunlight</option>
-                <option value="high">A lot of sunlight</option>
-              </select>
+        <form id="form-filters" action="">
+
+          <div class="l-container">
+            <div class="section-filters__item">
+              <img
+                class="section-filters__image"
+                src="images/illustrations/sun.png"
+                alt=""
+              />
+              <p class="section-filters__description">
+                <b>1.</b> Set the amount of <b>sunlight</b> <br />
+                your plant will get.
+              </p>
+              <div class="c-select">
+                <select class="c-select__select" name="sun" id="">
+                  <option disabled selected value="">Select...</option>
+                  <option value="no">No sun</option>
+                  <option value="low">A bit of sunlight</option>
+                  <option value="high">A lot of sunlight</option>
+                </select>
+              </div>
+            </div>
+            <div class="section-filters__item">
+              <img
+                class="section-filters__image"
+                src="images/illustrations/wateringcan.png"
+                alt=""
+              />
+              <p class="section-filters__description">
+                <b>2.</b> How often do you want to <br />
+                <b>water</b> your plant?
+              </p>
+              <div class="c-select">
+                <select class="c-select__select" name="water" id="">
+                  <option disabled selected value="">Select...</option>
+                  <option value="regularly">Regularly</option>
+                  <option value="daily">Daily</option>
+                  <option value="rarely">Rarely</option>
+                </select>
+              </div>
+            </div>
+            <div class="section-filters__item">
+              <img
+                class="section-filters__image"
+                src="images/illustrations/dog.png"
+                alt=""
+              />
+              <p class="section-filters__description">
+                <b>3.</b> Do you have pets? Do <br />
+                they <b>chew</b> plants?
+              </p>
+              <div class="c-select">
+                <select class="c-select__select" name="pets" id="">
+                  <option disabled selected value="">Select...</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div class="section-filters__item">
-            <img
-              class="section-filters__image"
-              src="images/illustrations/wateringcan.png"
-              alt=""
-            />
-            <p class="section-filters__description">
-              <b>2.</b> How often do you want to <br />
-              <b>water</b> your plant?
-            </p>
-            <div class="c-select">
-              <select class="c-select__select" name="" id="">
-                <option disabled selected value="">Select...</option>
-                <option value="regularly">Regularly</option>
-                <option value="daily">Daily</option>
-                <option value="rarely">Rarely</option>
-              </select>
-            </div>
-          </div>
-          <div class="section-filters__item">
-            <img
-              class="section-filters__image"
-              src="images/illustrations/dog.png"
-              alt=""
-            />
-            <p class="section-filters__description">
-              <b>3.</b> Do you have pets? Do <br />
-              they <b>chew</b> plants?
-            </p>
-            <div class="c-select">
-              <select class="c-select__select" name="" id="">
-                <option disabled selected value="">Select...</option>
-                <option value="true">Yes</option>
-                <option value="false">No</option>
-              </select>
-            </div>
-          </div>
-        </div>
+        </form>
       </section>
 
-      <section class="l-section section-no-results">
+      <section class="l-section section-no-results" id="no-results-container">
         <div class="l-container">
           <div class="section-no-results__info">
             <h2 class="section-no-results__title c-title c-title--grey">
@@ -141,7 +144,7 @@
         </div>
       </section>
 
-      <section class="l-section section-results">
+      <section class="l-section section-results" id="section-results">
         <div class="l-container">
           <img
             class="section-results__image"
@@ -151,196 +154,7 @@
           <h2 class="section-results__title c-title c-title--black">
             Our picks for you
           </h2>
-          <div class="cards-container">
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card">
-              <img
-                class="c-card__label"
-                src="images/illustrations/staff-fav.png"
-                alt=""
-              />
-              <img src="images/plants/succulent-bowl-large.jpg" alt="" />
-              <div class="c-card__content">
-                <h3 class="c-card__title">Test</h3>
-                <div class="c-card__details">
-                  <div class="c-card__price">
-                    <span>$24</span>
-                  </div>
-                  <div class="c-card__icons">
-                    <img src="images/icons/toxic.svg" alt="" />
-                    <img src="images/icons/pet.svg" alt="" />
-                    <img src="images/icons/no-sun.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="cards-container" id="results-container">
           </div>
         </div>
       </section>
@@ -359,5 +173,7 @@
         </div>
       </section>
     </main>
+
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
