@@ -20,7 +20,6 @@ filters.forEach((element) =>
             sectionResults.style.display = "block";
 						results.innerHTML = "";
             data.forEach((element) => {
-							console.log(element)
               let card = document.createElement("div");
               card.setAttribute("class", "c-card");
 
@@ -73,7 +72,7 @@ filters.forEach((element) =>
 							const sunIconsMap = {
 								no: new URL("/images/icons/no-sun.svg", import.meta.url),
 								low: new URL("/images/icons/low-sun.svg", import.meta.url),
-								high: highSunLogo = new URL("/images/icons/high-sun.svg", import.meta.url)
+								high: new URL("/images/icons/high-sun.svg", import.meta.url)
 							}
               cardIconSecond.setAttribute("src", sunIconsMap[element.sun]);
 							cardIcons.appendChild(cardIconSecond);
@@ -82,7 +81,7 @@ filters.forEach((element) =>
 							const waterIconsMap = {
 								rarely: new URL("/images/icons/1-drop.svg", import.meta.url),
 								regularly: new URL("/images/icons/2-drops.svg", import.meta.url),
-								daily: highSunLogo = new URL("/images/icons/3-drops.svg", import.meta.url)
+								daily: new URL("/images/icons/3-drops.svg", import.meta.url)
 							}
               cardIconThird.setAttribute("src", waterIconsMap[element.water]);
 							cardIcons.appendChild(cardIconThird);
